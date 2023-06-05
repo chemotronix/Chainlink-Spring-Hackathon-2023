@@ -10,7 +10,7 @@ function HeroCard({ number, text }) {
       className="rounded-xl px-11 md:my-0 my-7 py-9 bg-white z-30 shadow"
     >
       <div className="flex flex-col items-center">
-        <p className="text-[#008036] text-4xl">{number}</p>
+        <p className="text-[#008036] text-6xl">{number}</p>
         <p className="mt-2 text-lg">{text}</p>
       </div>
     </motion.div>

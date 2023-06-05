@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function TeamSection({ teamRef }) {
   const [details, setDetails] = React.useState(
     <AnimatePresence>
-      <motion.span exit={{ opacity: 0 }} className="text-[17px] lg:text-[20px]">
+      <motion.span exit={{ opacity: 0 }}>
         Scroll over your cursor on later to see the magic!
       </motion.span>
     </AnimatePresence>
@@ -13,16 +13,15 @@ function TeamSection({ teamRef }) {
 
   return (
     <div className="min-h-[50vh] pt-20 pb-20" ref={teamRef} id="#team">
-      <div className="flex items-center justify-center my-auto">
+      <div className="flex items-center  justify-center my-auto">
         <div className="flex items-center flex-wrap w-[80%] mx-auto justify-between mt-auto">
           <div className=" max-w-lg transition-all duration-500">
+            <h2 className="text-6xl font-bold">Our Team</h2>
             <p className="text-[25px] lg:w-[400px]">{details}</p>
           </div>
-          <div className="flex justify-center flex-wrap max-w-xl mt-10">
-          
+          <div className="flex flex-wrap max-w-xl">
             <LetterCircle
-              // image={"/team/festus.jpg"}
-              letter="P"
+              letter={"P"}
               color={"#0FE76A"}
               hover={() =>
                 setDetails(
@@ -34,8 +33,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-1xl font-[400]">
-                          Peace Bello
+                        <span className="text-3xl font-[400]">
+                          Peace Bello,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -56,13 +55,7 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Peace Bello
-                        </span>
-                        <br />
-                        <span className="text-lg font-[400]">
-                          Energy Innovator (Team Lead)
-                        </span>
+                        Scroll over your cursor on later to see the magic!
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -70,8 +63,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-            //  image={"/team/jess.png"}
-              letter="V"
+              letter={"V"}
               color={"#FEF025"}
               hover={() =>
                 setDetails(
@@ -83,8 +75,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Victor Olufemi
+                        <span className="text-3xl font-[400]">
+                          Victor Olufemi,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -105,13 +97,7 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Victor Olufemi
-                        </span>
-                        <br />
-                        <span className="text-lg font-[400]">
-                          Hardware Engineer
-                        </span>
+                        Scroll over your cursor on later to see the magic!
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -119,8 +105,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-            //  image={"/team/image.jpg"}
-              letter="B"
+              letter={"B"}
               color={"#029CFF"}
               hover={() =>
                 setDetails(
@@ -132,8 +117,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Boluwatife Jemiriye
+                        <span className="text-3xl font-[400]">
+                          Boluwatife Jemiriye,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -154,13 +139,7 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Boluwatife Jemiriye
-                        </span>
-                        <br />
-                        <span className="text-lg font-[400]">
-                          UI/UX designer
-                        </span>
+                        Scroll over your cursor on later to see the magic!
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -168,8 +147,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              // image={"/team/image.jpg"}
-              letter="G"
+              letter={"G"}
               color={"#FEF025"}
               hover={() =>
                 setDetails(
@@ -181,8 +159,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Grace Omojola
+                        <span className="text-3xl font-[400]">
+                          Grace Omojola,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -203,13 +181,7 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Grace Omojola
-                        </span>
-                        <br />
-                        <span className="text-lg font-[400]">
-                          Data scientist
-                        </span>
+                        Scroll over your cursor on later to see the magic!
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -217,8 +189,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              // image={"/team/festus.jpg"}
-              letter="I"
+              letter={"I"}
               color={"#029CFF"}
               hover={() =>
                 setDetails(
@@ -230,8 +201,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Iyanuoluwa Adebayo
+                        <span className="text-3xl font-[400]">
+                          Iyanuoluwa Adebayo,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -251,14 +222,8 @@ function TeamSection({ teamRef }) {
                       transition={{ delay: 0.5, duration: 0.4 }}
                       exit={{ opacity: 0 }}
                     >
-                     <span>
-                        <span className="text-2xl font-[400]">
-                          Iyanuoluwa Adebayo
-                        </span>
-                        <br />
-                        <span className="text-lg font-[400]">
-                          Software developer
-                        </span>
+                      <span>
+                        Scroll over your cursor on later to see the magic!
                       </span>
                     </motion.span>
                   </AnimatePresence>
@@ -266,8 +231,7 @@ function TeamSection({ teamRef }) {
               }
             />
             <LetterCircle
-              // image={"/team/jess.png"}
-              letter="O"
+              letter={"O"}
               color={"#0FE76A"}
               hover={() =>
                 setDetails(
@@ -279,8 +243,8 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Oreoluwa Akinola
+                        <span className="text-3xl font-[400]">
+                          Oreoluwa Akinola,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
@@ -301,13 +265,91 @@ function TeamSection({ teamRef }) {
                       exit={{ opacity: 0 }}
                     >
                       <span>
-                        <span className="text-2xl font-[400]">
-                          Oreoluwa Akinola
+                        Scroll over your cursor on later to see the magic!
+                      </span>
+                    </motion.span>
+                  </AnimatePresence>
+                )
+              }
+            />
+            <LetterCircle
+              letter={"D"}
+              color={"#029CFF"}
+              hover={() =>
+                setDetails(
+                  <AnimatePresence>
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 1.4, type: "spring" }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <span>
+                        <span className="text-3xl font-[400]">
+                          Ikechukwu Divine,
                         </span>
                         <br />
                         <span className="text-lg font-[400]">
-                          Blockchain developer
+                          UI/UX designer , Frontend developer
                         </span>
+                      </span>
+                    </motion.span>
+                  </AnimatePresence>
+                )
+              }
+              hoverOut={() =>
+                setDetails(
+                  <AnimatePresence>
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 0.4 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <span>
+                        Scroll over your cursor on later to see the magic!
+                      </span>
+                    </motion.span>
+                  </AnimatePresence>
+                )
+              }
+            />
+            <LetterCircle
+              letter={"Y"}
+              color={"#FEF025"}
+              hover={() =>
+                setDetails(
+                  <AnimatePresence>
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 1.4, type: "spring" }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <span>
+                        <span className="text-3xl font-[400]">
+                          Yanfunmi Jeje,
+                        </span>
+                        <br />
+                        <span className="text-lg font-[400]">
+                          Frontend developer
+                        </span>
+                      </span>
+                    </motion.span>
+                  </AnimatePresence>
+                )
+              }
+              hoverOut={() =>
+                setDetails(
+                  <AnimatePresence>
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.5, duration: 0.4 }}
+                      exit={{ opacity: 0 }}
+                    >
+                      <span>
+                        Scroll over your cursor on later to see the magic!
                       </span>
                     </motion.span>
                   </AnimatePresence>

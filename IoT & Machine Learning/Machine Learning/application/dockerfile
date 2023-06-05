@@ -1,0 +1,22 @@
+FROM python:3.8.12-slim
+
+# Install Java
+RUN apt-get update && apt-get install -y openjdk-11-jdk
+
+WORKDIR /app
+
+COPY ["requirements.txt","./"]
+
+RUN pip install -r requirements.txt
+
+COPY ["./","./"]
+
+COPY ["models/classifier.py","models/catboost_model.pkl","./models/"]
+
+# Add Java code and build/run commands
+COPY ["java_code/Main.java", "./java_code/"]
+RUN javac java_code/Main.java
+
+EXPOSE 8080
+
+ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:8080", "app:app"]

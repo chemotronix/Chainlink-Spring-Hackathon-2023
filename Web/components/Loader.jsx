@@ -20,7 +20,7 @@ const item = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
+      ease: [0.6, 0.01, 0.05, 0.95],
       duration: 1.6,
     },
   },
@@ -69,8 +69,8 @@ function Loader({ setLoading }) {
         <motion.div variants={itemMain}>
           <motion.img
             src={Logo.src}
-            // width={"210px"}
-            // height={"200px"}
+            width={"210px"}
+            height={"200px"}
             layoutId="main-image"
             className="animate-pulse"
           />

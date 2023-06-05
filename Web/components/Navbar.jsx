@@ -5,18 +5,19 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
-function Navbar({signedIn}) {
+function Navbar() {
   const router = useRouter();
   const [mobileNav, setMobileNav] = React.useState(false);
   return (
     <div>
       <div className="lg:flex items-center justify-between navbar py-2 ">
-        <motion.img
+       <p className="p-5 text-3xl font-bold text-[#008036]">CarbonZ</p>
+        {/* <motion.img
           src={Logo.src}
           style={{ zIndex: 40 }}
           layoutId="main-image"
           onClick={() => router.push("/")}
-        />
+        /> */}
 
         <ul className=" menu lg:menu-horizontal hidden ">
           <li tabIndex="0">
@@ -33,14 +34,6 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul className="py-2 px-4 border-t-2 border-primary bg-[#DCFFEB] z-40 w-[164px]">
-              <li className="active:!bg-primary">
-                <a>About us</a>
-              </li>
-              <li className="active:!bg-primary">
-                <Link href="dashboard">Technology</Link>
-              </li>
-            </ul>
           </li>
           <li tabIndex="0">
             <a className="justify-between font-[400] text-[#01431D] text-lg active:bg-primary">
@@ -56,14 +49,6 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            {/* <ul className="py-2 px-4 border-t-2 border-primary bg-[#DCFFEB] z-40">
-              <li className="active:!bg-primary">
-                <a>About us</a>
-              </li>
-              <li className="active:!bg-primary">
-                <a>Technology</a>
-              </li>
-            </ul> */}
           </li>
           <li tabIndex="0">
             <a className="justify-between font-[400] text-[#01431D] text-lg active:bg-primary">
@@ -79,17 +64,11 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            {/* <ul className="py-2 px-1 border-t-2 border-primary bg-[#DCFFEB] z-40 w-[108px]">
-              <li className="active:!bg-primary">
-                <a>About us</a>
-              </li>
-              <li className="active:!bg-primary">
-                <a>Technology</a>
-              </li>
-            </ul> */}
           </li>
           <li className="active:!bg-primary">
-          <Link href={"/team"}>Team</Link>
+            <a href="#team" className="font-[400] text-[#01431D] text-lg">
+              Team
+            </a>
           </li>
         </ul>
         <label
@@ -114,7 +93,7 @@ function Navbar({signedIn}) {
         </label>
       </div>
       <div
-        className={` absolute  px-5 bg-white py-10 z-50 transition-all duration-500 ${signedIn ? "w-[88vw]": "w-[100vw]"} lg:hidden ${
+        className={` absolute w-[100vw] px-5 bg-white py-10 z-50 transition-all duration-500 lg:hidden ${
           mobileNav ? "top-0" : "-top-[10000px]"
         } `}
       >
@@ -158,17 +137,6 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul
-              className="py-2  border-t-2 border-primary bg-[#DCFFEB] z-40 "
-              style={{ position: "initial" }}
-            >
-              <li className="active:!bg-primary">
-                <a>About us</a>
-              </li>
-              <li className="active:!bg-primary">
-                <Link href="#">Technology</Link>
-              </li>
-            </ul>
           </li>
           <li tabIndex="0">
             <a className="justify-between font-[400] text-[#01431D] text-lg active:bg-primary border-[#99F5C0] border-b-2">
@@ -184,17 +152,6 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul
-              className="py-2  border-t-2 border-primary bg-[#DCFFEB] z-40 "
-              style={{ position: "initial" }}
-            >
-              <li className="active:!bg-primary">
-                <a>About us</a>
-              </li>
-              <li className="active:!bg-primary">
-                <a>Technology</a>
-              </li>
-            </ul>
           </li>
           <li tabIndex="0">
             <a className="justify-between font-[400] text-[#01431D] text-lg active:bg-primary border-[#99F5C0] border-b-2">
@@ -210,20 +167,14 @@ function Navbar({signedIn}) {
                 <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
               </svg>
             </a>
-            <ul
-              className="py-2  border-t-2 border-primary bg-[#DCFFEB] z-40 "
-              style={{ position: "initial" }}
-            >
-              <li className="active:!bg-primary">
-                <a>About us</a>
-              </li>
-              <li className="active:!bg-primary">
-                <a>Technology</a>
-              </li>
-            </ul>
           </li>
           <li className="active:!bg-primary">
-          <Link href={"/team"}>Team</Link>
+            <a
+              href="#"
+              className="font-[400] text-[#01431D] text-lg border-[#99F5C0] border-b-2"
+            >
+              Team
+            </a>
           </li>
         </ul>
       </div>

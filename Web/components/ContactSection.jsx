@@ -2,13 +2,14 @@ import React from "react";
 
 function ContactSection() {
   return (
-    <div className="bg-[#DCFFEB] min-h-[50vh] flex items-center justify-center pt-20 pb-20">
+    <div className="bg-[#DCFFEB] min-h-[50vh] flex items-center justify-center mt-20 pt-20 pb-20">
       <div className="flex items-center flex-wrap mx-auto md:w-[50%] w-[86%] justify-between">
         <div>
           <p>Looking to partner with us?</p>
-          <h2 className="font-bold text-2xl lg:text-4xl">Contact Us</h2>
+          <h2 className="font-bold text-6xl">Contact Us</h2>
           <p>
-          info@chemotronix.org<br/>
+            carbonz@gmail.com <br />
+            0811382083
           </p>
         </div>
         <div className="md:w-[50%] w-[86%] ">
