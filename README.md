@@ -1,4 +1,4 @@
-# About CarbonZ
+# About CarbonZ (a product by Chemotronix Limited)
 
 The CarbonZ project combines **IoT, AI, and Blockchain** technologies to provide a comprehensive solution for offsetting carbon emissions. By leveraging IoT devices equipped with sensors, we monitor and track environmental parameters to accurately measure carbon emissions. Our advanced calibration strategy, powered by AWS, ensures precise data interpretation.
 
